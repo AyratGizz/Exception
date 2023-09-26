@@ -23,11 +23,11 @@ public class MessageHandler {
                 System.out.println("Неверно введено отчество, повторите снова");
                 count++;
             }
-            DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
+            DateFormat df = new SimpleDateFormat("dd.mm.yyyy");
             try {
                 df.parse(userData[3]);
             } catch (ParseException e) {
-                System.out.println("Неверный формат даты, введите в формате dd.MM.yyyy");
+                System.out.println("Неверный формат даты, введите в формате dd.mm.yyyy");
                 count++;
             }
             try {
